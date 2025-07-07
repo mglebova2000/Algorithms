@@ -10,9 +10,8 @@ fun main() {
 }
 
 fun maxIndexOfNumber(numbersInStr: List<String>): Int {
-
-
     val map = mapOf(
+        "ZIRO" to 0,
         "ONE" to 1,
         "TWO" to 2,
         "THREE" to 3,
@@ -26,8 +25,17 @@ fun maxIndexOfNumber(numbersInStr: List<String>): Int {
     )
 
     val newList = numbersInStr.map {
-        map.get(it)
+        map.get(it) ?: -1
     }
+    var indexOfMaxValue = -1
+    var maxValue = -1
 
-    return -1
+    newList.forEachIndexed { index, numberNewList ->
+        if (numberNewList > maxValue){
+            indexOfMaxValue = index
+            maxValue = numberNewList
+        }
+    }
+    return indexOfMaxValue
 }
+
