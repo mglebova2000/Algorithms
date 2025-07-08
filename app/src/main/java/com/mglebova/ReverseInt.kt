@@ -13,7 +13,7 @@ fun reverse(x: Int): Int {
     var reversedString = ""
 
     for (i in listOfChars.lastIndex downTo 0) {
-     reversedString += listOfChars.get(i)
+        reversedString += listOfChars.get(i)
     }
     return reversedString.toInt()
 }
