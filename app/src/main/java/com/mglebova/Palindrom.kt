@@ -13,6 +13,15 @@ fun main() {
 
 
 fun isPalindrome(x: Int): Boolean {
+    if (x < 0) {
+        return false
+    }
 
-    return false
+    val valueOfPalindrome = x.toString()
+    val reservedValueOfPalindrome = x.toString().reversed()
+    if (valueOfPalindrome == reservedValueOfPalindrome) {
+        return true
+    } else {
+        return false
+    }
 }
