@@ -11,7 +11,5 @@ fun main() {
 }
 
 fun reverse(x: Int): Int {
-
-
-    return -1
+    return x.toString().reversed().toInt()
 }
