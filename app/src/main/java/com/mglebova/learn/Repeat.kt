@@ -10,21 +10,37 @@ fun main() {
     alex2.setAge(2)
 
 }
-class Personn(val name: String, val surName: String) {
-    private var age = 10
+class Personn(val name: String = DEFAULT_NAME, val surName: String) {
+    private var age = DEFAULT_AGE
 
     fun setAge(value: Int) {
 
+
+        val day = DAY.MONDAY
+
+
         age = value
+    }
+
+    companion object {
+        private const val DEFAULT_AGE = 10
+        private const val DEFAULT_NAME = "fesfse"
+
     }
 }
 
 object Machine {
+    val current = DAY.TUESDAY
 
-    var width = 200
-
-    fun cry() {
+    fun work() {
+        if(current == DAY.WEDNESDAY){
+            // no work
+        }
 
     }
 
+}
+
+enum class DAY {
+    MONDAY, TUESDAY, WEDNESDAY
 }
