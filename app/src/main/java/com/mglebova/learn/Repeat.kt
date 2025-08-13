@@ -1,18 +1,13 @@
 fun main() {
-    val str = "fesmkfsenk"
-    val str2 = "fsefsefs"
-    val i = 3
+    val capitals = mapOf("Italy" to "Rome", "Canada" to "Ottawa")
 
-    val newnumber = i.incrementForMeryana()
+    val el = capitals["Spain"]
 
-}
+    val length = el?.length ?: -1
 
-fun String.privet(){
+    println(length)
 
 
-}
 
-fun Int.incrementForMeryana() : Int{
-    return this + 1
 }
 
