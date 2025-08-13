@@ -18,12 +18,13 @@ fun countStringInText(string: String, text: String): Int {
 
     for (i in 0 ..text.lastIndex){
 
-        val windowLastIndex = i + windowSize
-        if (windowLastIndex>text.lastIndex){
+        val windowLastIndexPlusOne = i + windowSize
+
+        if (windowLastIndexPlusOne>text.lastIndex){
             break
         }
 
-        val windowString = text.substring(i, windowLastIndex)
+        val windowString = text.substring(i, windowLastIndexPlusOne)
         if (windowString == string){
             counter++
         }
