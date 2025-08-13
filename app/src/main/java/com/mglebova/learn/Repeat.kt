@@ -3,7 +3,7 @@ fun main() {
 
     val el = capitals["Spain"]
 
-    val length = el?.length ?: -1
+    val length = el?.length ?: -2
 
     println(length)
 
