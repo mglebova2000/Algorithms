@@ -19,6 +19,8 @@ fun findDuplicates(numbers: List<Int>): List<Int> {
     val duplicates = mutableListOf<Int>()
     val allNums = mutableListOf<Int>()
 
+    allNums.map { "$$it$" }
+
     numbers.forEach { num ->
         if (allNums.contains(num)) {
             duplicates.add(num)
