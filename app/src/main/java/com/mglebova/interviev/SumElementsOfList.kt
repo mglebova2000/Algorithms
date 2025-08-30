@@ -8,8 +8,10 @@
 //Пример: sumElements(listOf(1, 2, 3, 4, 5)) -> 15. sumElements(emptyList()) -> 0.
 
 fun main() {
-    val result = sumElements(listOf(1, 2, 3, 4, 5))
-    println(result)
+    val result1 = sumElements(listOf(1, 2, 3, 4, 5))
+    val result2 = sumElements(emptyList())
+    println(result1)
+    println(result2)
 }
 
 fun sumElements(numbers: List<Int>): Long{
