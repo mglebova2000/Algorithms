@@ -18,7 +18,7 @@ fun sumElements(numbers: List<Int>): Long{
     var counter : Long = 0
 
     numbers.forEach { num ->
-    counter = counter+num
+        counter = counter+num
     }
     return counter
 }

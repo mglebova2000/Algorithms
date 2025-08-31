@@ -9,6 +9,10 @@
 
 fun main() {
 
+    val str : String? = null
+
+    val res = str!!.lowercase().uppercase().lowercase()
+
     val result = findFirstNonRepeatingChar("swiss") // ожидаем 'w'
     println(result)
 }

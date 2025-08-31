@@ -16,7 +16,9 @@ fun main() {
 
 fun PalindromeStr(str: String): Boolean{
 
-    val cleanStrReverse = str.lowercase().filter { it.isLetterOrDigit() }
+    val cleanStrReverse = str
+        .lowercase()
+        .filter { it.isLetter() || it.isDigit() }
 
     return cleanStrReverse == cleanStrReverse.reversed()
 }
