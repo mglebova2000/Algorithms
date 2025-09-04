@@ -33,6 +33,13 @@ class AnagramCheckTest {
         assertEquals(expected,actual)
     }
 
+    @Test
+    fun areAnagramsSymbolSensitive() {
+        val actual = areAnagrams("!@#$%^&*()", ")(*&^%$#@!")
+        val expected = true
+        assertEquals(expected,actual)
+    }
+
 
 
 }
