@@ -13,8 +13,7 @@ fun main() {
 fun sqrtSortedNumbersOfString(string: String): List<Int> {
     return string
         .split(" ")
-        .map { word -> word.toIntOrNull() }
-        .filterNotNull()
+        .mapNotNull { word -> word.toIntOrNull() }
         .distinct()
         .map { number -> number*number }
         .sorted()
